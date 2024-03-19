@@ -1,0 +1,21 @@
+n1=int(input('Enter n1:'))
+n2=int(input('Enter n2:'))
+def Add(n1,n2):
+	return n1+n2
+def Subtract(n1,n2):
+	return n1-n2
+def Multiply(n1, n2):
+	return n1*n2
+def Divide(n1,n2):
+	return n1/n2
+option=int(input('Please select options:\n1. Add \n2.Subtract \n3.Multiply \n4.Divide'))
+if option==1:
+	print(n1,'+',n2,'=',Add(n1,n2))
+elif option==2:
+	print(n1,'-',n2,'=', Subtract(n1,n2))
+elif option==3:
+	print(n1,'*',n2,'=', Multiply(n1,n2))
+elif option==4:
+	print(n1,'/',n2,'=',Divide(n1,n2))
+else:
+	print("Invalid option select")
